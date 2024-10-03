@@ -7,7 +7,6 @@ public class PhoneBookTest {
     @Test
     public void testAdd() {
         PhoneBook phoneBook = new PhoneBook();
-        phoneBook.add();
-        Assertions.assertEquals(phoneBook.add(), 1);
+        Assertions.assertEquals(phoneBook.add("123", "meme"), 1);
     }
 }
