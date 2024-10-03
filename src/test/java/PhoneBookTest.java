@@ -9,4 +9,11 @@ public class PhoneBookTest {
         PhoneBook phoneBook = new PhoneBook();
         Assertions.assertEquals(phoneBook.add("123", "meme"), 1);
     }
+
+    @Test
+    public void testFindByNumber() {
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("123", "meme");
+        Assertions.assertEquals(phoneBook.findByNumber("123"), "meme");
+    }
 }
